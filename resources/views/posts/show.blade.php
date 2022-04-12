@@ -5,7 +5,6 @@
   $post->title
 @endsection
 
-
 @section('meta-description',$post->excerpt)
 
 

@@ -77,6 +77,7 @@ class PostsController extends Controller
     }
     
 
+    
     public function update(Post $post, StorePostRequest $request)
     {
     

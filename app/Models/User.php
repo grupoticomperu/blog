@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 //agregamos esto en el modelo user
 Use Spatie\Permission\Traits\HasRoles;
+
 //
 
 use Illuminate\Notifications\Notifiable;
@@ -37,6 +38,11 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
 
     public function posts()
     {

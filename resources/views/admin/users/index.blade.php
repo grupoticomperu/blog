@@ -4,7 +4,8 @@
             <div class="row mb-2">
             <div class="col-sm-6">
                 <h1 class="m-0">Lista de usuarios </h1>
-                <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"> </i> Crear Usuario</button>
+                <a class="btn btn-primary pull-right" href=" {{ route('admin.users.create')}}"><i class="fa fa-plus"> </i> Crear Usuario</a>
+                
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">

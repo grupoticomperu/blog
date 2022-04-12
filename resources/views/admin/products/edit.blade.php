@@ -35,7 +35,6 @@
 
 @section('content')
 
-
     <form method="POST" action="{{ route('admin.product.update', $product) }}">
         {{ csrf_field() }} {{ method_field('PUT') }}
         <div class="row">

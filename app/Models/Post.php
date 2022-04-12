@@ -55,6 +55,7 @@ class Post extends Model
         if( auth()->user()->can('view', $this) )
         {
            // $posts = Post::all();
+           
             return $query;
            // return $query->Post::all(); no funcina
 
@@ -87,12 +88,14 @@ class Post extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
+
     public function setTitleAttribute($title)
     {
         $this->attributes['title'] = $title;
         $this->attributes['url'] = str::slug($title);
 
     }
+
 
     public function setPublishedAtAttribute($published_at)
     {

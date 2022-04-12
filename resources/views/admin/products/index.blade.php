@@ -43,8 +43,8 @@
                           <td>{{ $product->titulo }}</td>
                           <td>{{ $product->resumen }}</td>
                           <td>
-                              <a href="{{ route('posts.show', $product)}}" class="btn btn-xs btn-info"><i class="fas fa-eye"></i></a>
-                              <a href="{{ route('admin.posts.edit', $product)}}" class="btn btn-xs btn-info"><i class="fas fa-pencil-alt"></i></a>
+                              {{-- <a href="{{ route('product.show', $product)}}" class="btn btn-xs btn-info"><i class="fas fa-eye"></i></a> --}}
+                              <a href="{{ route('admin.product.edit', $product)}}" class="btn btn-xs btn-info"><i class="fas fa-pencil-alt"></i></a>
                               <a href="" class="btn btn-xs btn-danger"><i class="fas fa-times-circle"></i></a>
 
 

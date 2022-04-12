@@ -40,7 +40,7 @@
                     <div class="card-body">
 
 
-                  <div class="custom-file">
+                      <div class="custom-file">
                           
                           <label  for="imagen">Subir imagen</label>
                           <input type="file"  name="imagen" value="{{old('imagen')}}">
@@ -51,7 +51,8 @@
                           </div>
                       </div>
 
-                        <div class="form-group {{ $errors->has('name') ? 'text-danger' : '' }}">
+
+                      <div class="form-group {{ $errors->has('name') ? 'text-danger' : '' }}">
                           <label for="name">Categoria</label>
                           <input name="name" type="text" class="form-control" id="name" placeholder="Ingrese la Categoria" value="{{old('name')}}">
                           {!! $errors->first('name','<span class="help-block">:message</span>') !!}
@@ -64,9 +65,9 @@
                 </div>
                 <!-- /.card -->
 
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary btn-block">Guardar Categoria</button>
-                    </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary btn-block">Guardar Categoria</button>
+                </div>
 
               </div>
               <!--/.col (left) -->

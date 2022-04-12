@@ -36,7 +36,7 @@ class PostsTableSeeder extends Seeder
 
         $post = new Post;
         $post->title= "Mi primer post";
-        $post->url= Str::slug("mi_primer_post");  
+        $post->url= Str::slug("mi primer post");  
         $post->excerpt = "esto es un resumen de mi primer post";
         $post->body = "<p> esto es un resumen de mi primer post es de mi primer post esto es un resumen de mi primer post</p>";
         $post->published_at = Carbon::now()->subDays(4);
@@ -47,7 +47,7 @@ class PostsTableSeeder extends Seeder
 
         $post = new Post;
         $post->title= "Mi segundo post";
-        $post->url= Str::slug("mi_segundo_post");
+        $post->url= Str::slug("mi segundo post");
         $post->excerpt = "esto es un resumen de mi segundo post";
         $post->body = "<p> esto es un resumen de mi segundo post es de mi segundo post esto es un resumen de mi segundo post</p>";
         $post->published_at = Carbon::now()->subDays(3);

@@ -55,8 +55,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <img src="/adminlte/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
-                  {{ auth()->user()->name}} - {{ auth()->user()->roles->first()->name}}
-                  
+                  {{ auth()->user()->name}} -  {{ auth()->user()->roles->first()->name }}
+      
                 </h3>
                 <form method="POST" action="{{ route('logout') }}">
                   {{ csrf_field() }}

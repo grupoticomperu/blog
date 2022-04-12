@@ -29,12 +29,8 @@ class CategoriesController extends Controller
         return view('admin.categories.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
+
     public function store(StoreCategoryRequest $request)
     {
        // $category = Category::create($request->all());
@@ -63,6 +59,7 @@ class CategoriesController extends Controller
        // $category = Category::findOrFail($id);
         return view('admin.categories.show', compact('category'));
     }
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -109,8 +106,8 @@ class CategoriesController extends Controller
 
     public function destroy($id)
     {
-        Category::findOrFail($id)->delete();
+       
         
-         return redirect()->route('categories.index')->with('flash', 'Categoria Eliminada con exito');
+        
     }
 }
