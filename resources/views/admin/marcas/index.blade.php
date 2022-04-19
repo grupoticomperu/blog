@@ -47,7 +47,6 @@
                               <a href="{{ route('marca.show', $marca)}}" class="btn btn-xs btn-info"><i class="fas fa-eye"></i></a>
                               <a href="{{ route('marca.edit', $marca)}}" class="btn btn-xs btn-info"><i class="fas fa-pencil-alt"></i></a>
 
-
    
 
                                 <button data-toggle="modal" data-target="#deleteModal" data-id="{{ $marca->id }}"

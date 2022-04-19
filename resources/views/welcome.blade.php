@@ -16,6 +16,7 @@
 			<div class="content-post">
 
 
+
 				@include('posts.header')
 
 
