@@ -45,7 +45,7 @@ class UserSeeder extends Seeder
         $writer = new User;
         $writer->name = 'Karin';
         $writer->email = 'karin@ticomperu.com';
-        $writer->password = bcrypt('12345678');
+        $writer->password = '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi';
         $writer->save();
 
         $writer->assignRole($writerRole);

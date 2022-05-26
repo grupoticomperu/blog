@@ -57,7 +57,7 @@ class PostsTableSeeder extends Seeder
         //$post->tags()->attach(Tag::create(['name'=>'etiqueta 2']));
 
         $post = new Post;
-        $post->title= "Mi tercer post";
+        $post->title= "Mi teeeeeeercer post";
         $post->url= Str::slug("mi tercer post");
         $post->excerpt = "esto es un resumen de mi tercer post";
         $post->body = "<p> esto es un resumen de mi tercer post es de mi tercer post esto es un resumen de mi segundo post</p>";
@@ -68,7 +68,7 @@ class PostsTableSeeder extends Seeder
        // $post->tags()->attach(Tag::create(['name'=>'etiqueta 3']));
 
         $post = new Post;
-        $post->title= "Mi cuarto post";
+        $post->title= "Mi cuaaaaaaaaaarto post";
         $post->url= Str::slug("mi cuarto post");
         $post->excerpt = "esto es un resumen de mi cuarto post";
         $post->body = "<p> esto es un resumen de mi cuarto post es de mi cuarto post esto es un resumen de mi segundo post</p>";
